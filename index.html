@@ -1,408 +1,281 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تدريب تحصيلي في الفيزياء</title>
+<title>التدريب التحصيلي التفاعلي</title>
 
 <style>
+
 body{
-font-family:Tahoma,sans-serif;
-background:#f4f7fb;
+font-family:Tahoma, Arial, sans-serif;
+background:#f4f6f9;
 margin:0;
 padding:20px;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-background:#fff;
+.header{
+background:#2563eb;
+color:white;
+text-align:center;
 padding:25px;
 border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
-
-h1,h2{
-text-align:center;
-color:#1e3a8a;
+margin-bottom:20px;
 }
 
 .question{
-margin:20px 0;
+background:#fff;
 padding:15px;
-background:#f9fafb;
+margin-bottom:15px;
 border-radius:10px;
+box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
 
 button{
-background:#2563eb;
+background:#16a34a;
 color:white;
-padding:12px 25px;
 border:none;
-border-radius:8px;
-font-size:16px;
+padding:12px 25px;
+font-size:18px;
+border-radius:10px;
 cursor:pointer;
 display:block;
 margin:20px auto;
 }
 
-.result{
+#result{
 text-align:center;
-font-size:22px;
+font-size:24px;
 font-weight:bold;
-color:green;
+color:#2563eb;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="header">
+<h1>التدريب التحصيلي التفاعلي في الفيزياء</h1>
+<h2>إعداد المعلمة: خديجة عسيري</h2>
+<p>الصف الثالث الثانوي</p>
+</div>
 
-<h1>التدريب التحصيلي التفاعلي</h1>
-<h2>إعداد المعلمة خديجة عسيري</h2>
-
+<form id="quiz">
 <form id="quiz">
 
 <div class="question">
 <p>1- أي الحركات الآتية تمثل حركة توافقية بسيطة؟</p>
-<label><input type="radio" name="q1" value="1"> حركة البندول البسيط</label>
+<label><input type="radio" name="q1"> حركة سيارة بسرعة ثابتة</label><br>
+<label><input type="radio" name="q1" value="1"> حركة البندول البسيط</label><br>
+<label><input type="radio" name="q1"> سقوط حجر سقوطاً حراً</label><br>
+<label><input type="radio" name="q1"> حركة طائرة في خط مستقيم</label>
 </div>
 
 <div class="question">
 <p>2- طبقاً لقانون هوك تتناسب القوة المؤثرة في النابض طردياً مع:</p>
-<label><input type="radio" name="q2" value="1"> استطالة النابض</label>
+<label><input type="radio" name="q2"> كتلة النابض</label><br>
+<label><input type="radio" name="q2"> الزمن الدوري</label><br>
+<label><input type="radio" name="q2" value="1"> استطالة النابض</label><br>
+<label><input type="radio" name="q2"> مساحة المقطع</label>
 </div>
 
 <div class="question">
 <p>3- يمثل ميل منحنى القوة مقابل الإزاحة:</p>
-<label><input type="radio" name="q3" value="1"> ثابت النابض</label>
+<label><input type="radio" name="q3"> السرعة</label><br>
+<label><input type="radio" name="q3" value="1"> ثابت النابض</label><br>
+<label><input type="radio" name="q3"> التردد</label><br>
+<label><input type="radio" name="q3"> الطاقة الحركية</label>
 </div>
 
 <div class="question">
 <p>4- يعتمد الزمن الدوري للبندول البسيط على:</p>
-<label><input type="radio" name="q4" value="1"> طول الخيط</label>
+<label><input type="radio" name="q4"> كتلة الجسم</label><br>
+<label><input type="radio" name="q4"> السعة</label><br>
+<label><input type="radio" name="q4" value="1"> طول الخيط</label><br>
+<label><input type="radio" name="q4"> كثافة الوسط</label>
 </div>
 
 <div class="question">
 <p>5- معدل نقل الطاقة في الموجة يتناسب مع:</p>
-<label><input type="radio" name="q5" value="1"> مربع السعة</label>
+<label><input type="radio" name="q5"> الطول الموجي</label><br>
+<label><input type="radio" name="q5"> التردد فقط</label><br>
+<label><input type="radio" name="q5" value="1"> مربع السعة</label><br>
+<label><input type="radio" name="q5"> سرعة الموجة</label>
 </div>
 
 <div class="question">
 <p>6- أي الآتي مثال على موجة ميكانيكية؟</p>
-<label><input type="radio" name="q6" value="1"> الصوت</label>
+<label><input type="radio" name="q6"> الضوء</label><br>
+<label><input type="radio" name="q6"> أشعة جاما</label><br>
+<label><input type="radio" name="q6" value="1"> الصوت</label><br>
+<label><input type="radio" name="q6"> الأشعة السينية</label>
 </div>
 
 <div class="question">
 <p>7- تهتز جزيئات الوسط في الموجة المستعرضة:</p>
-<label><input type="radio" name="q7" value="1"> عمودياً على اتجاه الانتشار</label>
+<label><input type="radio" name="q7" value="1"> عمودياً على الانتشار</label><br>
+<label><input type="radio" name="q7"> موازية للانتشار</label><br>
+<label><input type="radio" name="q7"> دائرية</label><br>
+<label><input type="radio" name="q7"> عشوائية</label>
 </div>
 
 <div class="question">
 <p>8- الضوء يصنف بأنه:</p>
-<label><input type="radio" name="q8" value="1"> موجة كهرومغناطيسية</label>
+<label><input type="radio" name="q8"> موجة صوتية</label><br>
+<label><input type="radio" name="q8"> موجة ميكانيكية</label><br>
+<label><input type="radio" name="q8" value="1"> موجة كهرومغناطيسية</label><br>
+<label><input type="radio" name="q8"> موجة مائية</label>
 </div>
 
 <div class="question">
 <p>9- المسافة من خط الاتزان إلى القمة تسمى:</p>
-<label><input type="radio" name="q9" value="1"> السعة</label>
+<label><input type="radio" name="q9"> التردد</label><br>
+<label><input type="radio" name="q9"> الزمن الدوري</label><br>
+<label><input type="radio" name="q9" value="1"> السعة</label><br>
+<label><input type="radio" name="q9"> الطول الموجي</label>
 </div>
 
 <div class="question">
 <p>10- أقصر مسافة بين قمتين متتاليتين تسمى:</p>
-<label><input type="radio" name="q10" value="1"> الطول الموجي</label>
+<label><input type="radio" name="q10"> السعة</label><br>
+<label><input type="radio" name="q10" value="1"> الطول الموجي</label><br>
+<label><input type="radio" name="q10"> التردد</label><br>
+<label><input type="radio" name="q10"> السرعة</label>
 </div>
 
 <div class="question">
 <p>11- الزمن اللازم لإكمال دورة كاملة يسمى:</p>
-<label><input type="radio" name="q11" value="1"> الزمن الدوري</label>
+<label><input type="radio" name="q11"> التردد</label><br>
+<label><input type="radio" name="q11" value="1"> الزمن الدوري</label><br>
+<label><input type="radio" name="q11"> السعة</label><br>
+<label><input type="radio" name="q11"> الطور</label>
 </div>
 
 <div class="question">
-<p>12- عدد الاهتزازات الكاملة في الثانية الواحدة يسمى:</p>
-<label><input type="radio" name="q12" value="1"> التردد</label>
-</div>
-
-<div class="question">
-<p>13- تنشأ الموجة الموقوفة من:</p>
-<label><input type="radio" name="q13" value="1"> تراكب موجتين متعاكستين</label>
-</div>
-
-<div class="question">
-<p>14- موجة موقوفة مكونة من حلقتين تحتوي على:</p>
-<label><input type="radio" name="q14" value="1"> بطنين وثلاث عقد</label>
-</div>
-
-<div class="question">
-<p>15- المسافة بين خمس عقد متتالية تساوي:</p>
-<label><input type="radio" name="q15" value="1"> طولين موجيين</label>
-</div>
-
-<div class="question">
-<p>16- تتكون العقد والبطون بوضوح في:</p>
-<label><input type="radio" name="q16" value="1"> الموجات الموقوفة</label>
-</div>
-
-<div class="question">
-<p>17- ينتج الصوت بسبب:</p>
-<label><input type="radio" name="q17" value="1"> الاهتزازات</label>
-</div>
-
-<div class="question">
-<p>18- ينتقل الصوت أسرع ما يمكن في:</p>
-<label><input type="radio" name="q18" value="1"> المعادن</label>
-</div>
-
-<div class="question">
-<p>19- مثال على انعكاس الصوت:</p>
-<label><input type="radio" name="q19" value="1"> الصدى</label>
-</div>
-
-<div class="question">
-<p>20- تعتمد حدة الصوت على:</p>
-<label><input type="radio" name="q20" value="1"> التردد</label>
-</div>
-
-<div class="question">
-<p>21- كلما زاد التردد أصبح الصوت:</p>
-<label><input type="radio" name="q21" value="1"> أكثر حدة</label>
-</div>
-
-<div class="question">
-<p>22- تقاس شدة الصوت بوحدة:</p>
-<label><input type="radio" name="q22" value="1"> الديسيبل</label>
-</div>
-
-<div class="question">
-<p>23- عند اقتراب مصدر الصوت من المراقب:</p>
-<label><input type="radio" name="q23" value="1"> يزداد التردد المسموع</label>
-</div>
-
-<button type="button" onclick="showResult()">إرسال</button>
-
-</form>
-
-<div class="result" id="result"></div>
-
-</div>
-
-<script>
-function showResult(){
-let score = 0;
-
-for(let i=1;i<=23;i++){
-const answer = document.querySelector('input[name="q'+i+'"]:checked');
-if(answer) score++;
-}
-
-document.getElementById("result").innerHTML =
-"عدد الإجابات المكتملة: " + score + " من 23";
-}
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تدريب تحصيلي في الفيزياء</title>
-
-<style>
-body{
-font-family:Tahoma,sans-serif;
-background:#f4f7fb;
-margin:0;
-padding:20px;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-background:#fff;
-padding:25px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
-
-h1,h2{
-text-align:center;
-color:#1e3a8a;
-}
-
-.question{
-margin:20px 0;
-padding:15px;
-background:#f9fafb;
-border-radius:10px;
-}
-
-button{
-background:#2563eb;
-color:white;
-padding:12px 25px;
-border:none;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
-display:block;
-margin:20px auto;
-}
-
-.result{
-text-align:center;
-font-size:22px;
-font-weight:bold;
-color:green;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h1>التدريب التحصيلي التفاعلي</h1>
-<h2>إعداد المعلمة خديجة عسيري</h2>
-
-<form id="quiz">
-
-<div class="question">
-<p>1- أي الحركات الآتية تمثل حركة توافقية بسيطة؟</p>
-<label><input type="radio" name="q1" value="1"> حركة البندول البسيط</label>
-</div>
-
-<div class="question">
-<p>2- طبقاً لقانون هوك تتناسب القوة المؤثرة في النابض طردياً مع:</p>
-<label><input type="radio" name="q2" value="1"> استطالة النابض</label>
-</div>
-
-<div class="question">
-<p>3- يمثل ميل منحنى القوة مقابل الإزاحة:</p>
-<label><input type="radio" name="q3" value="1"> ثابت النابض</label>
-</div>
-
-<div class="question">
-<p>4- يعتمد الزمن الدوري للبندول البسيط على:</p>
-<label><input type="radio" name="q4" value="1"> طول الخيط</label>
-</div>
-
-<div class="question">
-<p>5- معدل نقل الطاقة في الموجة يتناسب مع:</p>
-<label><input type="radio" name="q5" value="1"> مربع السعة</label>
-</div>
-
-<div class="question">
-<p>6- أي الآتي مثال على موجة ميكانيكية؟</p>
-<label><input type="radio" name="q6" value="1"> الصوت</label>
-</div>
-
-<div class="question">
-<p>7- تهتز جزيئات الوسط في الموجة المستعرضة:</p>
-<label><input type="radio" name="q7" value="1"> عمودياً على اتجاه الانتشار</label>
-</div>
-
-<div class="question">
-<p>8- الضوء يصنف بأنه:</p>
-<label><input type="radio" name="q8" value="1"> موجة كهرومغناطيسية</label>
-</div>
-
-<div class="question">
-<p>9- المسافة من خط الاتزان إلى القمة تسمى:</p>
-<label><input type="radio" name="q9" value="1"> السعة</label>
-</div>
-
-<div class="question">
-<p>10- أقصر مسافة بين قمتين متتاليتين تسمى:</p>
-<label><input type="radio" name="q10" value="1"> الطول الموجي</label>
-</div>
-
-<div class="question">
-<p>11- الزمن اللازم لإكمال دورة كاملة يسمى:</p>
-<label><input type="radio" name="q11" value="1"> الزمن الدوري</label>
-</div>
-
-<div class="question">
-<p>12- عدد الاهتزازات الكاملة في الثانية الواحدة يسمى:</p>
-<label><input type="radio" name="q12" value="1"> التردد</label>
+<p>12- عدد الاهتزازات في الثانية الواحدة يسمى:</p>
+<label><input type="radio" name="q12"> السعة</label><br>
+<label><input type="radio" name="q12"> الطور</label><br>
+<label><input type="radio" name="q12" value="1"> التردد</label><br>
+<label><input type="radio" name="q12"> الطول الموجي</label>
 </div>
 
 <div class="question">
 <p>13- تنشأ الموجة الموقوفة من:</p>
-<label><input type="radio" name="q13" value="1"> تراكب موجتين متعاكستين</label>
+<label><input type="radio" name="q13"> موجة واحدة</label><br>
+<label><input type="radio" name="q13"> ثلاث موجات</label><br>
+<label><input type="radio" name="q13" value="1"> تراكب موجتين متعاكستين</label><br>
+<label><input type="radio" name="q13"> موجتين مختلفتي التردد</label>
 </div>
 
 <div class="question">
 <p>14- موجة موقوفة مكونة من حلقتين تحتوي على:</p>
-<label><input type="radio" name="q14" value="1"> بطنين وثلاث عقد</label>
+<label><input type="radio" name="q14"> بطن واحد وعقدتان</label><br>
+<label><input type="radio" name="q14" value="1"> بطنين وثلاث عقد</label><br>
+<label><input type="radio" name="q14"> ثلاث بطون</label><br>
+<label><input type="radio" name="q14"> أربع عقد</label>
 </div>
 
 <div class="question">
 <p>15- المسافة بين خمس عقد متتالية تساوي:</p>
-<label><input type="radio" name="q15" value="1"> طولين موجيين</label>
+<label><input type="radio" name="q15"> نصف طول موجي</label><br>
+<label><input type="radio" name="q15"> طول موجي واحد</label><br>
+<label><input type="radio" name="q15" value="1"> طولين موجيين</label><br>
+<label><input type="radio" name="q15"> ثلاثة أطوال موجية</label>
 </div>
 
 <div class="question">
 <p>16- تتكون العقد والبطون بوضوح في:</p>
-<label><input type="radio" name="q16" value="1"> الموجات الموقوفة</label>
+<label><input type="radio" name="q16"> الموجات المتحركة</label><br>
+<label><input type="radio" name="q16" value="1"> الموجات الموقوفة</label><br>
+<label><input type="radio" name="q16"> الموجات الكهرومغناطيسية</label><br>
+<label><input type="radio" name="q16"> الضوء</label>
 </div>
 
 <div class="question">
 <p>17- ينتج الصوت بسبب:</p>
-<label><input type="radio" name="q17" value="1"> الاهتزازات</label>
+<label><input type="radio" name="q17"> الحرارة</label><br>
+<label><input type="radio" name="q17" value="1"> الاهتزازات</label><br>
+<label><input type="radio" name="q17"> الضوء</label><br>
+<label><input type="radio" name="q17"> الضغط فقط</label>
 </div>
 
 <div class="question">
 <p>18- ينتقل الصوت أسرع ما يمكن في:</p>
-<label><input type="radio" name="q18" value="1"> المعادن</label>
+<label><input type="radio" name="q18"> الغازات</label><br>
+<label><input type="radio" name="q18"> السوائل</label><br>
+<label><input type="radio" name="q18" value="1"> المعادن</label><br>
+<label><input type="radio" name="q18"> الفراغ</label>
 </div>
 
 <div class="question">
 <p>19- مثال على انعكاس الصوت:</p>
-<label><input type="radio" name="q19" value="1"> الصدى</label>
+<label><input type="radio" name="q19" value="1"> الصدى</label><br>
+<label><input type="radio" name="q19"> الانكسار</label><br>
+<label><input type="radio" name="q19"> الحيود</label><br>
+<label><input type="radio" name="q19"> التداخل</label>
 </div>
 
 <div class="question">
 <p>20- تعتمد حدة الصوت على:</p>
-<label><input type="radio" name="q20" value="1"> التردد</label>
+<label><input type="radio" name="q20"> السعة</label><br>
+<label><input type="radio" name="q20" value="1"> التردد</label><br>
+<label><input type="radio" name="q20"> سرعة الصوت</label><br>
+<label><input type="radio" name="q20"> الوسط</label>
 </div>
 
 <div class="question">
 <p>21- كلما زاد التردد أصبح الصوت:</p>
-<label><input type="radio" name="q21" value="1"> أكثر حدة</label>
+<label><input type="radio" name="q21" value="1"> أكثر حدة</label><br>
+<label><input type="radio" name="q21"> أكثر جهارة</label><br>
+<label><input type="radio" name="q21"> أبطأ</label><br>
+<label><input type="radio" name="q21"> أقل طاقة</label>
 </div>
 
 <div class="question">
 <p>22- تقاس شدة الصوت بوحدة:</p>
-<label><input type="radio" name="q22" value="1"> الديسيبل</label>
+<label><input type="radio" name="q22"> نيوتن</label><br>
+<label><input type="radio" name="q22"> جول</label><br>
+<label><input type="radio" name="q22" value="1"> ديسيبل</label><br>
+<label><input type="radio" name="q22"> واط</label>
 </div>
 
 <div class="question">
 <p>23- عند اقتراب مصدر الصوت من المراقب:</p>
-<label><input type="radio" name="q23" value="1"> يزداد التردد المسموع</label>
+<label><input type="radio" name="q23"> يقل التردد</label><br>
+<label><input type="radio" name="q23"> لا يتغير</label><br>
+<label><input type="radio" name="q23" value="1"> يزداد التردد المسموع</label><br>
+<label><input type="radio" name="q23"> ينعدم الصوت</label>
 </div>
 
-<button type="button" onclick="showResult()">إرسال</button>
+</form>
+<button type="button" onclick="checkScore()">
+إرسال الإجابات
+</button>
+
+<p id="result"></p>
 
 </form>
 
-<div class="result" id="result"></div>
-
-</div>
-
 <script>
-function showResult(){
+function checkScore(){
+
 let score = 0;
 
 for(let i=1;i<=23;i++){
-const answer = document.querySelector('input[name="q'+i+'"]:checked');
-if(answer) score++;
+
+let answer =
+document.querySelector('input[name="q'+i+'"]:checked');
+
+if(answer && answer.value=="1"){
+score++;
+}
+
 }
 
 document.getElementById("result").innerHTML =
-"عدد الإجابات المكتملة: " + score + " من 23";
+"درجتك: " + score + " من 23";
 }
 </script>
 
