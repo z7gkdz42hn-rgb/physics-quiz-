@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اختبار الفيزياء</title>
+
+<style>
+body{
+    font-family:Tahoma,sans-serif;
+    background:#f4f6f9;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#1565c0;
+}
+
+.question{
+    margin-top:20px;
+    padding:15px;
+    background:#f8f8f8;
+    border-radius:10px;
+}
+
+button{
+    margin-top:20px;
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:18px;
+}
+
+#result{
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+    color:green;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>اختبار الفيزياء</h1>
+
+<label>اسم الطالبة:</label>
+<input type="text" id="name" style="width:100%;padding:10px;margin-top:10px;">
+
+<div class="question">
+<p><strong>1. أي الحركات الآتية تمثل حركة توافقية بسيطة؟</strong></p>
+
+<label><input type="radio" name="q1" value="a"> حركة البندول البسيط</label><br>
+<label><input type="radio" name="q1" value="b"> حركة القمر حول الأرض</label><br>
+<label><input type="radio" name="q1" value="c"> حركة سيارة في مضمار سباق</label><br>
+<label><input type="radio" name="q1" value="d"> سقوط الكرة</label>
+</div>
+
+<div class="question">
+<p><strong>2. طبقًا لقانون هوك، تتناسب القوة المؤثرة في نابض تناسبًا طرديًا مع مقدار...</strong></p>
+
+<label><input type="radio" name="q2" value="a"> سمك النابض</label><br>
+<label><input type="radio" name="q2" value="b"> استطالته</label><br>
+<label><input type="radio" name="q2" value="c"> طوله الأصلي</label><br>
+<label><input type="radio" name="q2" value="d"> كتلته</label>
+</div>
+
+<button onclick="gradeQuiz()">إرسال الاختبار</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function gradeQuiz(){
+
+let score = 0;
+
+let q1 = document.querySelector('input[name="q1"]:checked');
+let q2 = document.querySelector('input[name="q2"]:checked');
+
+if(q1 && q1.value==="a"){
+score++;
+}
+
+if(q2 && q2.value==="b"){
+score++;
+}
+
+document.getElementById("result").innerHTML =
+"درجتك: " + score + " من 2";
+}
+
+</script>
+
+</body>
+</html>
